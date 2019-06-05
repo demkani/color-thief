@@ -27,7 +27,7 @@ var iAmOnNode = false;
 var Canvas;
 var Image;
 var fs;
-if ( !!process && process.execPath ) {
+if ( !window && !!process && process.execPath ) {
     iAmOnNode = true;
 }
 if (iAmOnNode) {
